@@ -1,6 +1,6 @@
 React App by Vinoba Bhardwaj
 ### Overview
-This is a React app created by Vinoba Bhardwaj. The app is deployed and can be accessed at https://crm-by-vinoba.sh/.
+This is a React app created by Vinoba Bhardwaj. The app is deployed and can be accessed at https://crm-by-vinoba.surge.sh/.
 
 ### Features
 Utilizes React, Axios, React Redux, React Redux Toolkit, and React Icons.
