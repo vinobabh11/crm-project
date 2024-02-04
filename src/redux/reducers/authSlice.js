@@ -1,5 +1,5 @@
 import { createSlice} from "@reduxjs/toolkit";
-import { fetchData } from "../api/fetchData";
+import { fetchData } from "../../api/fetchData";
 
 const authSlice = createSlice({
   name: "auth",
@@ -17,7 +17,8 @@ const authSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.data = action.payload;
-        localStorage.setItem('token', state?.data?.token)
+        state.token = state.data.token
+        window.localStorage.setItem('token', state.token)
       })
       .addCase(fetchData.rejected, (state) => {
         state.status = "failed";

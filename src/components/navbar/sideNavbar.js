@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { changeDash } from "../redux/dashboardSlice";
+import { changeDash } from "../../redux/reducers/dashboardSlice";
 
 const SideNavbar = () => {
   const [active, setActive] = useState('Dashboard');

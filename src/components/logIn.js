@@ -12,10 +12,11 @@ const LogIn = () => {
   });
   const [isError, setIsError] = useState(false);
   const isStatus = useSelector((state) => state.auth.status) ?? "no status";
+  // const data = useSelector((state) => state.auth.data)
 
   useEffect(() => {
     if (isStatus !== undefined) {
-        handleNavigation(isStatus);
+      handleNavigation(isStatus);
     }
   }, [isStatus]);
 
@@ -30,13 +31,13 @@ const LogIn = () => {
         setIsError(false);
         break;
       case "failed":
-            setIsError(true);
+        setIsError(true);
         break;
       default:
         break;
     }
   };
-  
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const user = { username: formInput.username, password: formInput.password };

@@ -1,6 +1,6 @@
 import React from 'react'
-import Board from '../components/board'
-import SideNavbar from '../components/sideNavbar'
+import Board from '../components/dashboard/board'
+import SideNavbar from '../components/navbar/sideNavbar'
 
 const DashboardPage = () => {
   return (

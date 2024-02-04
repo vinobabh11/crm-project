@@ -1,7 +1,7 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import authReducer from './authSlice'
-import dashboardReducer from './dashboardSlice';
-import productsReducer from './productsSlice';
+import authReducer from './reducers/authSlice'
+import dashboardReducer from './reducers/dashboardSlice';
+import productsReducer from './reducers/productsSlice';
 
 const rootReducer = combineReducers ({
     auth: authReducer,

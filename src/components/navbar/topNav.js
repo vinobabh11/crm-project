@@ -5,12 +5,12 @@ const TopNav = () => {
   const router = useHistory();
   const handleLogout = () => {
     localStorage.removeItem("token");
-    router.push("/");
+    localStorage.removeItem("user");
+    router.replace("/");
   };
   
   return (
     <div className="topNavbar">
-      <div>User Details</div>
       <div onClick={handleLogout}>Log out</div>
     </div>
   );
